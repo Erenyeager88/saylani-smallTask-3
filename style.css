@@ -1,0 +1,134 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Tilt Warp";
+    background-color: black;
+}
+.bg-img{
+    width: 100%;
+    position:absolute;
+    z-index: -1;
+    height: 100%;
+    background-repeat: repeat-y;
+}
+.parent{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.logo{
+    color: white;
+    font-size: 50px;
+    display: flex;
+}
+.nav-box{
+    height: 30px;
+    width: 105px;
+    background-color: orange;
+    padding-top: 3px; ;
+    padding-left: 7px;
+    border-radius: 3px;
+    color: black;
+    font-weight: 70;
+}
+.active{
+    color: orange;
+}
+ul{
+display: flex;
+gap: 30px;
+height: 50px;
+align-items: center; 
+list-style-type: none;
+}
+
+li{
+   
+    color: white;
+    font-weight: 30;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width:600px) {
+    .nav-links{
+        display: none;
+    }
+    .img{
+        width: 350px;
+    }
+
+}
+@media screen and (min-width:600px) {
+    .icon{
+        display: none;
+    }
+    
+    
+}
+.parent-hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.hero-img{
+    width: 40%;
+}
+
+.img{
+   object-fit: contain;
+}
+.hero-txt{
+    width: 40%;
+    color: orange;
+}
+.hero-heading{
+    color: white;
+}
+.text{
+    font-size: small;
+    font-weight: 200;
+    color: white;
+    padding-top: 20px;
+}
+.menu{
+    width:300px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+    color: white;
+}
+.inside-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+.hero-btn{
+    height: 30px;
+    width: 105px;
+    background-color: orange;
+    padding-top: 3px; ;
+    padding-left: 7px;
+    border-radius: 3px;
+}
+@media screen and (max-width:950px) {
+    .parent-hero{
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+}
+@media screen and (max-width:950px) {
+    .hero-img{
+       margin-right: 180px;
+    }
+}
